@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         FeedAdapter usher4 = new FeedAdapter("Usher", "Burn", "Burn is a song by American R&B singer Usher, which he wrote with American songwriters Jermaine Dupri and Bryan-Michael Cox. The song was produced by Dupri ");
         FeedAdapter jayz2 = new FeedAdapter("Jay-Z", "99problems", "99 Problems is the third · In the song, Jay-Z tells a story about dealing with rap critics, racial profiling from a police officer who wants to search his car");
         FeedAdapter aboogie3 = new FeedAdapter("Aboogie", "Timeless", "Artist Julius Dubose (born December 6, 1995), known professionally as A Boogie wit da Hoodie (or simply A Boogie), is an American rapper, singer, ");
-        FeedAdapter blade1 = new FeedAdapter("Role:Tank", "Blade:Flinch", "Shield hammer \n Finch is extremely forgetful and airheaded. She has trouble recalling names and often forgets events as soon as they have occurred. Other than that she is sweet and cheerful");
+        FeedAdapter blade1 = new FeedAdapter("Role: Tank", "Blade: Flinch", "Shield hammer \n Finch is extremely forgetful and airheaded. She has trouble recalling names and often forgets events as soon as they have occurred. Other than that she is sweet and cheerful");
         ArrayList<FeedAdapter> peopleList = new ArrayList<>();
 
         peopleList.add(blade1);
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         peopleList.add(jayz2);
         peopleList.add(aboogie3);
 
+        System.out.println("Test");
         PersonListAdapter adapter = new PersonListAdapter(this, R.layout.listview_topmusic, peopleList);
         lv_listview.setAdapter(adapter);
 
